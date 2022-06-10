@@ -6,3 +6,12 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+model Product {
+  id          String   @id @default(uuid()) /// or @default(cuid())
+  name        String   @db.VarChar(100)
+  description String?  @db.VarChar(1000)
+  sku         String
+  price       Decimal  @db.Decimal(10, 2)
+  createdAt   DateTime @default(now()) @db.Time()
+  updatedAt   DateTime @updatedAt @db.Timestamptz()
+}

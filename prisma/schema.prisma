@@ -6,6 +6,7 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
 model Product {
   id          String   @id @default(uuid()) /// or @default(cuid())
   name        String   @db.VarChar(100)
@@ -14,4 +15,12 @@ model Product {
   price       Decimal  @db.Decimal(10, 2)
   createdAt   DateTime @default(now()) @db.Time()
   updatedAt   DateTime @updatedAt @db.Timestamptz()
+
+  categories Category[]
+}
+
+model Category {
+  id       String    @id @default(uuid()) /// or @default(cuid())
+  name     String
+  products Product[]
 }

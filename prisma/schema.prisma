@@ -8,13 +8,13 @@ datasource db {
 }
 
 model Product {
-  id          String   @id @default(uuid()) /// or @default(cuid())
-  name        String
-  description String?  @db.VarChar(1000)
-  sku         String
-  price       Decimal  @db.Decimal(10, 2)
-  createdAt   DateTime @default(now()) @db.Time()
-  updatedAt   DateTime @updatedAt @db.Timestamptz()
+  id        String   @id @default(uuid()) /// or @default(cuid())
+  name      String   @db.Citext
+  content   String?  @db.VarChar(1000)
+  sku       String
+  price     Decimal  @db.Decimal(10, 2)
+  createdAt DateTime @default(now()) @db.Time()
+  updatedAt DateTime @updatedAt @db.Timestamptz()
 
   categories Category[]
 }

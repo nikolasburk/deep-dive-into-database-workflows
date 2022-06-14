@@ -32,4 +32,3 @@ jobs:
           node-version: '14.x'
       - run: npm install
       # TODO: Add step to apply migration on test database
-      - run: npm run test

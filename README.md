@@ -40,17 +40,17 @@ Finally, we’ll cover the different ways in which you can troubleshoot failed m
 
 # Lessons
 
-[Migration fundamentals](https://www.notion.so/Migration-fundamentals-fac8131432ae4637b90e0360bcca15ef?pvs=21)
+[Migration fundamentals](./lesson-1.md)
 
-[Schema prototyping](https://www.notion.so/Schema-prototyping-b4087c5b2438467fb59c11ba67f55b4b?pvs=21)
+[Schema prototyping](./lesson-2.md)
 
-[Developing with Prisma Migrate](https://www.notion.so/Developing-with-Prisma-Migrate-18be8cbebb0e4905b99c0a674c65e840?pvs=21)
+[Developing with Prisma Migrate](./lesson-3.md)
 
-[Customizing migrations](https://www.notion.so/Customizing-migrations-cb6b00fc1b5140609a48e29675fa5e32?pvs=21)
+[Customizing migrations](./lesson-4.md)
 
-[Running Prisma Migrate in CI and Production](https://www.notion.so/Running-Prisma-Migrate-in-CI-and-Production-1edb43af5a4946798ab8029b492d5b9b?pvs=21)
+[Running Prisma Migrate in CI and Production](./lesson-5.md)
 
-[Troubleshooting failed migrations](https://www.notion.so/Troubleshooting-failed-migrations-0d8bebb88bed44578315e10722bdf049?pvs=21)
+[Troubleshooting failed migrations](./lesson-6.md)
 
 # What does a lesson look like?
 
